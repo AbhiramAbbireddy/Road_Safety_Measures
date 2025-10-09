@@ -1,27 +1,38 @@
+/* --- THIS IS THE CORRECTED CODE --- */
+
+/* Full-screen wrapper to hold everything */
 .road-guard-learning-page {
-  padding: 20px;
-  line-height: 1.6;
+  position: relative; /* Establishes a positioning context for the video */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically centers content if it's smaller than the screen */
+  padding: 4rem 2rem; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensures padding doesn't add to the width */
 }
 
+/* Background video should be behind everything */
 .video-background {
-  position: fixed;
+  position: fixed; /* Changed from absolute to fixed */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1; /* Places video behind content */
-}
-
-.video-background video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  z-index: -1; /* Place it behind all content */
 }
 
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Main content container */
 .road-guard-learning-page .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -30,56 +41,93 @@
   text-align: center;
   margin-bottom: 40px;
   color: #fff;
-  background-color: rgba(76, 175, 80, 0.8);
-  padding: 20px;
-  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 12px;
 }
 
-.road-guard-learning-page h1 {
-  font-size: 2.5em;
+.road-guard-learning-page header h1 {
+  font-size: 2.8em;
+  font-weight: 700;
 }
 
-.road-guard-learning-page .level {
-  margin-bottom: 40px;
-  padding: 20px;
+/* --- The rest of the file remains the same --- */
+
+/* Accordion Styling */
+.level {
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
 }
 
-.road-guard-learning-page .level h2 {
-  font-size: 2em;
-  color: #333;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #4CAF50;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-
-.road-guard-learning-page .video-path {
+.level-header {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
 }
 
-.road-guard-learning-page .video-item {
+.level-header h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin: 0;
+}
+
+.level-header .icon {
+  font-size: 2rem;
+  color: #667eea;
+  transition: transform 0.3s ease;
+}
+
+.level.active .level-header .icon {
+  transform: rotate(180deg);
+}
+
+/* Video List Styling */
+.video-path {
+  display: grid;
+  gap: 1rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.level.active .video-path {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.video-item {
   background-color: #fff;
-  padding: 20px;
+  padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: calc(33.33% - 20px);
-  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.road-guard-learning-page .video-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.video-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
 }
 
-.road-guard-learning-page .video-item a {
-  font-size: 1.2em;
+.video-item a {
+  font-size: 1.1em;
   text-decoration: none;
-  color: #007BFF;
-  font-weight: bold;
+  color: #333;
+  font-weight: 600;
+  position: relative; 
+  z-index: 2;
+}
+
+.video-item .play-icon {
+  color: #667eea;
 }

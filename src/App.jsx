@@ -1,13 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// Import Global CSS
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import './App.css';
-
-// Import Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-// Import Pages
 import Home from "./pages/Home";
 import RoadGuardLearning from "./pages/RoadGuardLearning";
 import RoadSafetyStatistics from "./pages/RoadSafetyStatistics";
@@ -19,10 +13,25 @@ import Quiz from "./pages/Quiz";
 import TrafficRules from "./pages/TrafficRules";
 import WhyImportant from "./pages/WhyImportant";
 
+// This new component checks the current page and decides if a video background should be shown.
+function AppContent() {
+  const location = useLocation();
+  const isEducationalPage = location.pathname === '/road-safety-educational';
+  const isLearningPage = location.pathname === '/road-guard-learning';
 
-function App() {
   return (
-    <BrowserRouter>
+    <>
+      {(isEducationalPage || isLearningPage) && (
+        <div className="video-background-fixed">
+          <video autoPlay loop muted playsInline key={location.pathname}>
+            <source 
+              src={isLearningPage ? "/videos/roadGuardBG.mp4" : "/videos/roadsafetyeducationbgvideo.mp4"} 
+              type="video/mp4" 
+            />
+          </video>
+        </div>
+      )}
+
       <Navbar />
       <main>
         <Routes>
@@ -39,6 +48,15 @@ function App() {
         </Routes>
       </main>
       <Footer />
+    </>
+  );
+}
+
+// The main App component now just sets up the Router
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }

@@ -1,38 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/roadSafetyEducational.css';
 
 function RoadSafetyEducational() {
-  // useState to remember if the sidebar is open or closed
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  // Function to toggle the sidebar state
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
   return (
     <div className="educational-page">
-      {/* Video Background */}
-      <div className="video-background">
-        <video autoPlay loop muted playsInline>
-          <source src="/videos/roadsafetyeducationbgvideo.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      {/* Sidebar */}
-      <div className={isSidebarOpen ? 'sidebar active' : 'sidebar'}>
-        <Link to="/why-important" onClick={toggleSidebar}>Why Road Safety Is Important?</Link>
-        <Link to="/traffic-rules" onClick={toggleSidebar}>Traffic Rules and Signals</Link>
-        <Link to="/importance-road-safety" onClick={toggleSidebar}>Safe Driving Practices</Link>
-        <Link to="/guidelines-driving" onClick={toggleSidebar}>Essential Guidelines for Driving</Link>
-        <Link to="/after-accident" onClick={toggleSidebar}>Steps After a Road Accident</Link>
-      </div>
-
-      {/* Open Button for Sidebar */}
-      <button className="open-btn" onClick={toggleSidebar}>☰ Menu</button>
-
-      {/* Main Content */}
+      {/* The video background div has been completely removed from this file */}
       <div className="container">
         <h1>Road Safety Educational</h1>
         
