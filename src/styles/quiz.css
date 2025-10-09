@@ -1,0 +1,114 @@
+.quiz-container {
+  background-color: #f0f8ff;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.quiz-box {
+  background: white;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Score Section & Dashboard */
+.score-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-section h2 {
+  font-size: 2.5rem;
+  color: #004aad;
+}
+
+.score-section .score-text {
+  font-size: 1.5rem;
+  margin: 10px 0 20px 0;
+}
+
+.score-section .level-indicator {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.level-beginner { background-color: #dc3545; }
+.level-intermediate { background-color: #ffc107; color: #333 !important; }
+.level-advanced { background-color: #28a745; }
+
+.score-section p {
+  font-size: 1.1rem;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.score-section .nav-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.score-section .nav-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Question Section */
+.question-section {
+  width: 100%;
+}
+
+.question-count {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004aad;
+}
+
+.question-text {
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.answer-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.answer-section button {
+  width: 100%;
+  font-size: 1rem;
+  color: #333;
+  background-color: #e7f1ff;
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #b0c4de;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  min-height: 70px;
+}
+
+.answer-section button:hover {
+  background-color: #b0c4de;
+  transform: translateY(-2px);
+}

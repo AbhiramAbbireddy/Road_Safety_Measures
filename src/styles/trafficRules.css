@@ -1,0 +1,55 @@
+.traffic-rules-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-bottom: 2rem;
+}
+
+.traffic-rules-page header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.traffic-rules-page header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.traffic-rules-page section {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rule {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.rule h2 {
+  color: #4CAF50;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.rule .image {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rule .image-desc {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+  text-align: center;
+}
