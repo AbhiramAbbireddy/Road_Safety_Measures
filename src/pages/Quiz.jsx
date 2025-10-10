@@ -4,7 +4,6 @@ import '../styles/quiz.css';
 
 function Quiz() {
     const questions = [
-        // Includes 5 image-based questions
         { questionText: "What does this road sign mean?", imageUrl: "/images/quiz/stop_sign.jpg", answerOptions: [{ text: "Yield" }, { text: "Stop completely", isCorrect: true }, { text: "Slow down" }, { text: "Do not enter" }] },
         { questionText: "When pedestrians are at a crosswalk, you should:", answerOptions: [{ text: "Honk to alert them" }, { text: "Stop and let them cross", isCorrect: true }, { text: "Drive around them" }, { text: "Speed up" }] },
         { questionText: "This sign indicates:", imageUrl: "/images/quiz/pedestrian_crossing_sign.png", answerOptions: [{ text: "A nearby school" }, { text: "A playground ahead" }, { text: "A pedestrian crossing ahead", isCorrect: true }, { text: "A jogging path" }] },
@@ -77,7 +76,6 @@ function Quiz() {
     );
   };
 
-  // NEW: Style for the quiz images
   const quizImageStyle = {
     width: '200px',
     height: '200px',
@@ -96,7 +94,7 @@ function Quiz() {
               <div className='question-count'>
                 <span>Question {currentQuestion + 1}</span>/{questions.length}
               </div>
-              {/* Conditionally render the image if imageUrl exists */}
+              
               {questions[currentQuestion].imageUrl && (
                 <img 
                   src={questions[currentQuestion].imageUrl} 

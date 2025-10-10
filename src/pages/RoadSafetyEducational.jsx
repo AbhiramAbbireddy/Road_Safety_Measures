@@ -5,7 +5,7 @@ import '../styles/roadSafetyEducational.css';
 function RoadSafetyEducational() {
   return (
     <div className="educational-page">
-      {/* The video background div has been completely removed from this file */}
+      
       <div className="container">
         <h1>Road Safety Educational</h1>
         

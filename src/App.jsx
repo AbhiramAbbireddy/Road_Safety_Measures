@@ -13,7 +13,6 @@ import Quiz from "./pages/Quiz";
 import TrafficRules from "./pages/TrafficRules";
 import WhyImportant from "./pages/WhyImportant";
 
-// This new component checks the current page and decides if a video background should be shown.
 function AppContent() {
   const location = useLocation();
   const isEducationalPage = location.pathname === '/road-safety-educational';
@@ -52,7 +51,6 @@ function AppContent() {
   );
 }
 
-// The main App component now just sets up the Router
 function App() {
   return (
     <BrowserRouter>

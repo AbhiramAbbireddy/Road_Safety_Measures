@@ -12,16 +12,12 @@ function Navbar() {
 
   return (
     <nav className="modern-navbar">
-      {/* Logo */}
       <NavLink to="/" className="navbar-logo">
         Road Safety
       </NavLink>
-
-      {/* Navigation Card */}
       <div className="navigation-card">
         {navItems.map((item, index) => {
           const Icon = item.icon;
-          
           return (
             <NavLink
               key={index}

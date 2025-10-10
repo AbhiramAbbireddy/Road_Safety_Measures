@@ -3,7 +3,6 @@
   min-height: 100vh;
 }
 
-/* Style for background video */
 .video-background {
   position: fixed;
   top: 0;
@@ -20,23 +19,22 @@
   object-fit: cover;
 }
 
-/* Sidebar styling */
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px; /* Hidden by default */
+  left: -250px;
   width: 250px;
   height: 100%;
   background-color: #333;
   color: #fff;
   overflow-y: auto;
   transition: left 0.3s ease;
-  padding-top: 60px; /* Space for the menu button */
-  z-index: 1000; /* Ensure it's on top */
+  padding-top: 60px;
+  z-index: 1000;
 }
 
 .sidebar.active {
-  left: 0; /* Show sidebar when active */
+  left: 0;
 }
 
 .sidebar a {
@@ -51,14 +49,13 @@
   background: #555;
 }
 
-/* Button to open/close sidebar */
 .open-btn {
   position: fixed;
   top: 20px;
   left: 20px;
   font-size: 24px;
   cursor: pointer;
-  z-index: 1001; /* Above the sidebar */
+  z-index: 1001;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
@@ -69,7 +66,7 @@
 .container {
   max-width: 1000px;
   margin: 50px auto;
-  padding: 80px 20px 20px 20px; /* Add top padding to not be hidden by header */
+  padding: 80px 20px 20px 20px;
   text-align: center;
   z-index: 1;
   position: relative;
@@ -78,7 +75,7 @@
 .container h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .block {
@@ -111,9 +108,27 @@
   line-height: 1.6;
 }
 
-/* Specific block colors */
-#why-important { background: linear-gradient(135deg, #fbb034, #ffdd00); color: #fff; }
-#traffic-rules { background: linear-gradient(135deg, #32cd32, #fada5e); color: #333; }
-#safe-driving { background: linear-gradient(135deg, #1e90ff, #48d1cc); color: #fff; }
-#guidelines-driving { background: linear-gradient(135deg, #f0f8ff, #00bfff); color: #333; }
-#after-accident { background: linear-gradient(135deg, #ff6347, #808080); color: #fff; }
+#why-important {
+  background: linear-gradient(135deg, #fbb034, #ffdd00);
+  color: #fff;
+}
+
+#traffic-rules {
+  background: linear-gradient(135deg, #32cd32, #fada5e);
+  color: #333;
+}
+
+#safe-driving {
+  background: linear-gradient(135deg, #1e90ff, #48d1cc);
+  color: #fff;
+}
+
+#guidelines-driving {
+  background: linear-gradient(135deg, #f0f8ff, #00bfff);
+  color: #333;
+}
+
+#after-accident {
+  background: linear-gradient(135deg, #ff6347, #808080);
+  color: #fff;
+}

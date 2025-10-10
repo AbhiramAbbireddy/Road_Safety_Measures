@@ -1,4 +1,4 @@
-/* Modern Hero Section */
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center;
   color: white;
-  min-height: 40vh; /* Give it some height */
+  min-height: 40vh; 
 }
 
 .hero h1 {
@@ -74,7 +74,7 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Topics Section Refresh */
+
 .topics {
   padding: 5rem 2rem;
   text-align: center;

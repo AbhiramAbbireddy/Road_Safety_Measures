@@ -1,4 +1,4 @@
-/* Reset and Basic Styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,6 @@ body {
   color: #333;
 }
 
-/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -34,7 +33,6 @@ body {
   color: #ffda79;
 }
 
-/* Navigation Links Container */
 .navbar .nav-links {
   list-style: none;
   display: flex;
@@ -44,12 +42,10 @@ body {
   align-items: center;
 }
 
-/* Individual List Items */
 .navbar .nav-links li {
   display: inline-block;
 }
 
-/* Links Styling */
 .navbar .nav-links a {
   display: inline-block;
   color: white;
@@ -66,13 +62,11 @@ body {
   background-color: rgba(255, 218, 121, 0.1);
 }
 
-/* Active NavLink - This is automatically added by React Router */
 .navbar .nav-links a.active {
   color: #ffda79;
   background-color: rgba(255, 218, 121, 0.15);
 }
 
-/* Optional: Underline effect for active link */
 .navbar .nav-links a.active::after {
   content: '';
   position: absolute;
@@ -85,7 +79,6 @@ body {
   border-radius: 2px;
 }
 
-/* Footer */
 .footer {
   padding: 1.5rem;
   text-align: center;
@@ -105,7 +98,6 @@ body {
   text-decoration: underline;
 }
 
-/* Global Fixed Video Background */
 .video-background-fixed {
   position: fixed;
   top: 0;

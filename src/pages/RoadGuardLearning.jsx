@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { PlayCircle, ChevronDown } from 'lucide-react';
 import '../styles/roadGuardLearning.css';
 
-// 1. Organize all data into a clean array
+
 const learningData = [
   {
     level: "Beginner",
@@ -39,11 +39,11 @@ const learningData = [
 ];
 
 function RoadGuardLearning() {
-  // 2. Use useState to remember which accordion level is open
+  
   const [activeLevel, setActiveLevel] = useState(0); // Open the "Beginner" level by default
 
   const toggleLevel = (levelIndex) => {
-    // If the clicked level is already open, close it. Otherwise, open it.
+    
     setActiveLevel(activeLevel === levelIndex ? null : levelIndex);
   };
 
@@ -60,7 +60,7 @@ function RoadGuardLearning() {
           <h1>Road Safety Learning Hub</h1>
         </header>
 
-        {/* 3. Map over the data to create the accordion dynamically */}
+        
         {learningData.map((section, index) => (
           <div key={index} className={`level ${activeLevel === index ? 'active' : ''}`}>
             <div className="level-header" onClick={() => toggleLevel(index)}>

@@ -1,12 +1,11 @@
-/* Modern Navbar Styling */
 .modern-navbar {
   padding: 1.5rem 3rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
-  justify-content: center; /* Changed from space-between to center */
+  justify-content: center;
   align-items: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  position: relative; /* Added for logo positioning */
+  position: relative; 
 }
 
 .navbar-logo {
@@ -15,15 +14,15 @@
   color: white;
   text-decoration: none;
   transition: transform 0.3s ease;
-  position: absolute; /* Position logo absolutely */
-  left: 3rem; /* Keep it on the left */
+  position: absolute;
+  left: 3rem;
 }
 
 .navbar-logo:hover {
   transform: scale(1.05);
 }
 
-/* Navigation Card Container */
+
 .navigation-card {
   display: flex;
   align-items: center;
@@ -34,7 +33,7 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* Individual Nav Tab */
+
 .nav-tab {
   display: flex;
   align-items: center;
@@ -56,7 +55,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Active Tab Styling */
+
 .nav-tab.active {
   background-color: #667eea;
   color: white;
@@ -66,7 +65,7 @@
   background-color: #5568d3;
 }
 
-/* Icon Wrapper */
+
 .icon-wrapper {
   display: flex;
   align-items: center;
@@ -75,12 +74,10 @@
   height: 24px;
 }
 
-/* Nav Label */
 .nav-label {
   white-space: nowrap;
 }
 
-/* Responsive Design */
 @media (max-width: 968px) {
   .modern-navbar {
     padding: 1rem 1.5rem;

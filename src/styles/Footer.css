@@ -1,7 +1,6 @@
-/* Simple & Professional Footer */
 .simple-footer {
-  background-color: #1a1a1a; /* Dark background for high contrast */
-  color: #d9d9d9; /* Bright, light gray text for readability */
+  background-color: #1a1a1a; 
+  color: #d9d9d9; 
   text-align: center;
   padding: 2rem 1rem;
   font-family: Arial, sans-serif;
@@ -17,5 +16,5 @@
 .footer-credit {
   margin: 0;
   font-size: 0.9rem;
-  color: #8c8c8c; /* Softer gray for the credit line */
+  color: #8c8c8c; 
 }

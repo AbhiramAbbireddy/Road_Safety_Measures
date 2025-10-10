@@ -1,26 +1,23 @@
-/* --- THIS IS THE CORRECTED CODE --- */
 
-/* Full-screen wrapper to hold everything */
 .road-guard-learning-page {
-  position: relative; /* Establishes a positioning context for the video */
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; /* Vertically centers content if it's smaller than the screen */
-  padding: 4rem 2rem; /* Add some padding for spacing */
-  box-sizing: border-box; /* Ensures padding doesn't add to the width */
+  align-items: center;
+  padding: 4rem 2rem; 
+  box-sizing: border-box; 
 }
 
-/* Background video should be behind everything */
 .video-background {
-  position: fixed; /* Changed from absolute to fixed */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1; /* Place it behind all content */
+  z-index: -1; 
 }
 
 .video-background video {
@@ -29,7 +26,6 @@
   object-fit: cover;
 }
 
-/* Main content container */
 .road-guard-learning-page .container {
   max-width: 900px;
   width: 100%;
@@ -52,9 +48,6 @@
   font-weight: 700;
 }
 
-/* --- The rest of the file remains the same --- */
-
-/* Accordion Styling */
 .level {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
@@ -87,7 +80,6 @@
   transform: rotate(180deg);
 }
 
-/* Video List Styling */
 .video-path {
   display: grid;
   gap: 1rem;

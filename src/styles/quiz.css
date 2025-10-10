@@ -17,7 +17,6 @@
   text-align: center;
 }
 
-/* Score Section & Dashboard */
 .score-section {
   display: flex;
   flex-direction: column;
@@ -43,9 +42,15 @@
   margin-bottom: 20px;
 }
 
-.level-beginner { background-color: #dc3545; }
-.level-intermediate { background-color: #ffc107; color: #333 !important; }
-.level-advanced { background-color: #28a745; }
+.level-beginner { 
+  background-color: #dc3545; 
+}
+.level-intermediate { 
+  background-color: #ffc107; color: #333 !important; 
+}
+.level-advanced { 
+  background-color: #28a745; 
+}
 
 .score-section p {
   font-size: 1.1rem;
@@ -70,7 +75,6 @@
 }
 
 
-/* Question Section */
 .question-section {
   width: 100%;
 }
