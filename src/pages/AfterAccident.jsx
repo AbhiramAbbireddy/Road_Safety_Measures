@@ -16,7 +16,7 @@ function AfterAccident() {
         </div>
 
         <div className="step">
-          <h2>2. Call Emergency Services</h2>
+          <h2>2. Call Emergency Services </h2>
           <p>If there are injuries or significant damage, call emergency services immediately. Provide them with accurate information about the location.</p>
           <img src="/images/CallEmergencyServices.jpg" alt="Calling emergency services" className="image" />
         </div>
