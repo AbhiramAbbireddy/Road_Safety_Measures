@@ -66,7 +66,7 @@ function RoadSafetyStatistics() {
           <img className="graph" src="/images/graph.avif" alt="Road Traffic Deaths by Region" />
         </div>
         <div className="graph-container">
-          <h3>Fatalities by Road User Type</h3>
+          <h3>Fatalities by Road User</h3>
           <img className="graph" src="/images/graph1.jpeg" alt="Road Traffic Fatalities by User Type" />
         </div>
       </div>
