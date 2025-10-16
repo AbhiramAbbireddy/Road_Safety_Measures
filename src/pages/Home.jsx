@@ -18,7 +18,7 @@ function Home() {
       <section className="about" ref={aboutSectionRef}>
         <div className="about-content">
           <h2>About Us</h2>
-          <p>Our mission is to raise awareness about road safety through education, resources, and community support. Join us in making roads safer for all users by learning safe driving and pedestrian practices.</p>
+          <p>Our mission is to raise awareness about road safety through education resources and community support. Join us in making roads safer for all users by learning safe driving and pedestrian practices.</p>
         </div>
       </section>
 
