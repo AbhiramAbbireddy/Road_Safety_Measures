@@ -6,7 +6,7 @@ function Footer() {
     <footer className="simple-footer">
       <p className="footer-quote">Drive Safe, Live Safe.</p>
       <p className="footer-credit">
-        Made with ❤️ by theboysgang cse-c
+        Made with ❤️ by theBoysgang cse-c
       </p>
     </footer>
   );

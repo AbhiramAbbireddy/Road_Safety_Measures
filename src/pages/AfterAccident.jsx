@@ -10,13 +10,13 @@ function AfterAccident() {
         <p>In the event of an accident, it's crucial to remain calm and take the following steps to ensure safety and legal compliance:</p>
 
         <div className="step">
-          <h2>1. Ensure Safety First</h2>
+          <h2>1. Ensure Safety First </h2>
           <p>Check for injuries and ensure your safety and that of others involved. If possible, move vehicles to a safe location away from traffic.</p>
           <img src="/images/EnsureSafetyFirst.webp" alt="Ensure safety first" className="image" />
         </div>
 
         <div className="step">
-          <h2>2. Call Emergency Services</h2>
+          <h2>2. Call Emergency Services </h2>
           <p>If there are injuries or significant damage, call emergency services immediately. Provide them with accurate information about the location.</p>
           <img src="/images/CallEmergencyServices.jpg" alt="Calling emergency services" className="image" />
         </div>

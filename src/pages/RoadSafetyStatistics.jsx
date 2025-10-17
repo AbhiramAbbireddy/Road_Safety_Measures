@@ -17,7 +17,7 @@ function RoadSafetyStatistics() {
             className="icon" 
             style={{ width: '80px', height: '80px' }} 
           />
-          <h3>A Life Lost Every 24 Seconds</h3>
+          <h3>A Life Lost </h3>
           <div className="stat-number">1.35 Million</div>
           <p className="stat-description">That's the number of people who die in road traffic accidents globally each year. It's the leading cause of death for people aged 5-29.</p>
         </div>
@@ -66,7 +66,7 @@ function RoadSafetyStatistics() {
           <img className="graph" src="/images/graph.avif" alt="Road Traffic Deaths by Region" />
         </div>
         <div className="graph-container">
-          <h3>Fatalities by Road User Type</h3>
+          <h3>Fatalities by Road User</h3>
           <img className="graph" src="/images/graph1.jpeg" alt="Road Traffic Fatalities by User Type" />
         </div>
       </div>
