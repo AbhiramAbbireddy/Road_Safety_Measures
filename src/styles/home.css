@@ -94,3 +94,37 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+
+/* --- Mobile View Enhancements for Homepage --- */
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .about, .topics {
+    padding: 4rem 1.5rem;
+  }
+
+  .about h2, .topics h2 {
+    font-size: 2.2rem;
+  }
+
+  .about p {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+    gap: 1.5rem;
+  }
+}

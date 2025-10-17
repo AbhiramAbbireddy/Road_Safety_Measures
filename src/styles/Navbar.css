@@ -116,3 +116,147 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 768px) {
+  .modern-navbar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+ 
+  .navbar-logo {
+    position: relative;
+    left: 0;
+  }
+ 
+  .navigation-card {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* --- Mobile Navigation Styles --- */
+
+.mobile-menu-button {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background: white;
+  z-index: 101;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.sidebar-header button {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+}
+
+.sidebar-links {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-link:hover, .sidebar-link.active {
+  background-color: #f1f3f5;
+  color: #667eea;
+}
+
+@media (max-width: 968px) {
+  /* Hide the desktop navigation card */
+  .navigation-card {
+    display: none;
+  }
+
+  /* --- NEW AND UPDATED RULES START HERE --- */
+
+  /* Make the main navbar a positioning container */
+  .modern-navbar {
+    justify-content: center; /* This will center the logo */
+    position: relative;      /* Required for absolute positioning of the button */
+    padding: 1.5rem;
+  }
+
+  /* Remove absolute positioning from the logo so it can be centered */
+  .navbar-logo {
+    position: static; /* Let the logo be centered by the parent flexbox */
+    left: auto;
+    transform: none;
+  }
+
+  /* Show and position the mobile menu button */
+  .mobile-menu-button {
+    display: flex;
+    position: absolute;   /* Position it relative to the navbar */
+    left: 1.5rem;         /* Move it to the left with some padding */
+    top: 50%;             /* Center it vertically */
+    transform: translateY(-50%); /* Fine-tune the vertical centering */
+  }
+}
