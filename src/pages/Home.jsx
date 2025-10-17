@@ -40,7 +40,7 @@ function Home() {
           <Card 
             icon={<ClipboardCheck size={40} />}
             title="Test Your Knowledge"
-            description="Take our quiz to see how much you know." 
+            description="Take Our Quiz To See How Much You Know." 
             link="/quiz" 
           />
            <Card 
